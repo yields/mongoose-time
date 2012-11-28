@@ -1,0 +1,17 @@
+{
+  "name": "mongoose-time",
+  "description": "mongoose timestamps",
+  "author": "Amir Abu Shareb <amir.abu.shareb@me.com>",
+  "keywords": ["mongoose", "timestamps"],
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yields/mongoose-time"
+  },
+  "devDependencies": {
+    "mongoose": ">= 3.4.0",
+    "mocha": "*",
+    "should": "*"
+  }
+}

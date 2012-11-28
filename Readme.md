@@ -23,7 +23,7 @@ var Artist = model('Artist', schema);
 
 ## Running tests
 
-make sure you edit [db.json]() to set the database the test
+make sure you edit [db.json](/yields/mongoose-time/blob/master/test/db.json) to set the database the test
 should run on.
 
     $ make test

@@ -5,7 +5,7 @@ timestamps for mongoose, populates `created_at` and `updated_at`.
 
 ## Installation
 
-  $ npm install mongoose-time
+    $ npm install mongoose-time
 
 ## Usage
 
@@ -26,7 +26,7 @@ var Artist = model('Artist', schema);
 make sure you edit [db.json]() to set the database the test
 should run on.
 
-  $ make test
+    $ make test
 
 ## License
 

@@ -11,18 +11,20 @@ module.exports = timestamps;
  *
  * example:
  *
- *      timestamps(mySchema);
+ *      mySchema.plugin(timestamps());
  *
- * @param {Schema} schema
  * @param {Object} opts
+ * @return {Function} Function
  */
 
-function timestamps(schema, opts) {
-  schema.add({ updated_at: Date, created_at: Date });
-  schema.pre('save', function (next) {
-    var timestamp = new Date();
-    this.created_at = this.created_at || timestamp;
-    this.updated_at = timestamp;
-    next();
+function timestamps(opts) {
+  return (function(schema){
+    schema.add({ updated_at: Date, created_at: Date });
+    schema.pre('save', function(next){
+      var timestamp = new Date();
+      this.created_at = this.created_at || timestamp;
+      this.updated_at = timestamp;
+      next();
+    });
   });
 };

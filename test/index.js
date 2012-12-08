@@ -3,7 +3,7 @@ var mongoose = require('mongoose')
   , Schema = mongoose.Schema
   , model = mongoose.model.bind(mongoose)
   , timestamps = require('..')
-  , schema = Schema({}).plugin(timestamps)
+  , schema = Schema({}).plugin(timestamps())
   , Artist = model('Artist', schema)
   , to = require('./db').database;
 

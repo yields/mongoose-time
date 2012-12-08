@@ -16,7 +16,7 @@ var mongoose = require('mongoose')
   , model = mongoose.model.bind(mongoose)
   , timestamps = require('mongoose-time');
 
-var schema = new Schema({}).plugin(timestamps);
+var schema = new Schema({}).plugin(timestamps());
 var Artist = model('Artist', schema);
 
 ```
